@@ -1,0 +1,27 @@
+.child
+{
+    width: calc(33% - 10px);
+    height: 100px;
+    background-color: darkblue;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.parent
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media all and (min-width: 940px)
+{
+    .child{
+        width: calc(20% - 10px);
+    }
+}
+
+@media all and (min-width: 640px)
+{
+    .child{
+        width: calc(25% - 10px);
+    }
+}
